@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: darkgray;
+    min-height: 100vh;
+    display: flex;
+    /* INFORMA SE OS ITENS SÂO EM CONLUNAS OU ROWS - LINHAS */
+    /* flex-direction: column; */
+    /* ESPAÇAMENTO DOS ITENS EM LINHA */
+    /* row-gap: 15px;  */
+    /* ESPAÇAMENTO DOS ITENS EM COLNA */
+    column-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: #fff;
+    font-size: 20px;
+}
