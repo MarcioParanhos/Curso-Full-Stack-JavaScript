@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+}
+.container {
+    background-color: darkgray;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.header,
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height: 80px;
+}
+img {
+    width: 200px;
+}
+.main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.items-content{
+    flex: 1 0 auto;
+    padding: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 5px;
+}
+.item {
+    background-color: #fff;
+    border-radius: 10px;
+}
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+.btn{
+    background-color: transparent;
+    text-decoration: none;
+    padding: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+.btn:hover{
+    border-bottom: 2px solid #ff0043;
+    transition: 0.5s;
+    color: #ff0043;
+    
+}
