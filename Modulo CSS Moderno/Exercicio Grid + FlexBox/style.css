@@ -30,20 +30,31 @@ img {
     justify-content: center;
     align-items: center;
     padding: 15px;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
 }
 .items-content{
+    flex-wrap: wrap;
     flex: 1 0 auto;
-    padding: 80px;
+    padding: 40px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    gap: 5px;
+    grid-auto-rows: minmax(180px, auto);
+    gap: 20px;
+    grid-template-areas: 
+    "item1 item2 item3 item4"
+    "item5 item6 item7 item4"
+    "item8 item9 item10 item4";
 }
 .item {
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 15px;
+}
+.item:hover {
+    background-color: #ff0043;
+    border-radius: 15px;
+    transition: 0.5s;
+    
 }
 .nav {
     display: flex;
@@ -69,6 +80,93 @@ a {
 .btn:hover{
     border-bottom: 2px solid #ff0043;
     transition: 0.5s;
-    color: #ff0043;
+    color: #ff0043; 
+}
+.btn-readMore {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+.btn-readMore button {
+    font-size: 18px;
+    padding: 8px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.item1 {
+    grid-area: item1;
+}
+.img-item{
+    display: flex;
+    width: 43vh;
+    height: 250px;
+    margin: 25px;
+    border-radius: 5px;
+  
+}
+.title-item{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
     
+}
+.paragraph-item{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+}
+.item2 {
+    grid-area: item2;
+}
+.item3 {
+    grid-area: item3;
+}
+.item4 {
+    grid-area: item4;
+    margin-left: 20px;
+    background-color: #393839;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.item4 h2 {
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+.item4 h3 {
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+.img-item4{
+    width: 320px;
+    border-radius: 15px;
+}
+.item5 {
+    grid-area: item5;
+}
+.item6 {
+    grid-area: item6;
+}
+.item7 {
+    grid-area: item7;
+}
+.item8 {
+    grid-area: item8;
+}
+.item9 {
+    grid-area: item9;
+}
+.item10 {
+    grid-area: item10;
 }
